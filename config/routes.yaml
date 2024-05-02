@@ -1,0 +1,18 @@
+routes:
+
+collections:
+  /guide/:
+    permalink: /guide/{slug}/
+    template: post
+    filter: primary_tag:guide
+  /opinion/:
+    permalink: /opinion/{year}/{slug}/
+    template: post
+    filter: primary_tag:opinion
+  /:
+    permalink: /{slug}/
+    template: index
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/

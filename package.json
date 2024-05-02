@@ -1,6 +1,6 @@
 {
-    "name": "dawn",
-    "description": "A Ghost theme",
+    "name": "dawnx",
+    "description": "A Ghost theme based on Dawn",
     "version": "1.0.0",
     "private": true,
     "engines": {
@@ -8,9 +8,9 @@
     },
     "license": "MIT",
     "author": {
-        "name": "Ghost Foundation",
+        "name": "Joe Kawai",
         "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "url": "https://kawaijoe.com"
     },
     "keywords": [
         "ghost",

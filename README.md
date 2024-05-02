@@ -1,24 +1,25 @@
-# Dawn
+# Dawnx
 
-A highly functional [Ghost](https://github.com/TryGhost/Ghost) theme that adapts to the reader's preferences. Let them read, search, subscribe, navigate, and more with ease.
+A Ghost theme based on the original Dawn theme with a few tweaks and enhancements.
 
-**Demo: https://dawn.ghost.io**
+**Demo: https://kawaijoe.com**
 
 # Instructions
 
-1. [Download this theme](https://github.com/TryGhost/Dawn/archive/main.zip)
+1. [Download this theme](https://github.com/kawaijoe/dawnx/releases)
 2. Log into Ghost, and go to the `Design` settings area to upload the zip file
+3. Go to `Advanced` settings area and upload the `redirects.yaml` and `routes.yaml` files under Labs (Beta features).
 
 # Development
 
-Styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
+Styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [PNPM](https://pnpm.io/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
 
 ```bash
 # Install
-yarn
+pnpm install
 
 # Run build & watch for changes
-yarn dev
+pnpm run dev
 ```
 
 Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
@@ -26,13 +27,5 @@ Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/
 The `zip` Gulp task packages the theme files into `dist/dawn.zip`, which you can then upload to your site.
 
 ```bash
-yarn zip
+pnpm run zip
 ```
-
-# Contribution
-
-This repo is synced automatically with [TryGhost/Themes](https://github.com/TryGhost/Themes) monorepo. If you're looking to contribute or raise an issue, head over to the main repository [TryGhost/Themes](https://github.com/TryGhost/Themes) where our official themes are developed.
-
-# Copyright & License
-
-Copyright (c) 2013-2023 Ghost Foundation - Released under the [MIT license](LICENSE).
